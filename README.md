@@ -3,7 +3,7 @@
 ## Why?
 
 - You want rule-set based routing
-- You don't like manual migratration of routing rules
+- You don't like manual migration of routing rules
 - You want Shadowsocks 2022 EIH, which is not well implemented by most providers, and will cause performance lag for shadowsocks-rust and shadowsocks-go, and not implemented by dae-next yet.
 
 ## NOTE
