@@ -17,5 +17,8 @@ python3 convert.py < your_singbox_conf.json > config.json
 
 # for dae
 python3 gen_dae_nodes.py < config.json | sudo tee --append /etc/dae/config.dae
+# alternatively
+python3 gen_sub_links.py < config.json | sudo tee /etc/dae/singbox.sub
+sudo chmod 600 /etc/dae/singbox.sub
 ```
 

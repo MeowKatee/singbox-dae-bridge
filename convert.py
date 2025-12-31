@@ -13,7 +13,13 @@ def generate_config(input_json):
         outbound
         for outbound in outbounds
         if outbound["tag"] != "direct"
-        and not ("到期时间" in outbound["tag"] or "当前流量" in outbound["tag"])
+        and not (
+            "到期时间" in outbound["tag"]
+            or "当前流量" in outbound["tag"]
+            or "剩余流量" in outbound["tag"]
+            or "距离下次重置剩余" in outbound["tag"]
+            or "套餐到期" in outbound["tag"]
+        )
     ]
 
     if not outbounds:
